@@ -5,7 +5,7 @@ public class FileHandler {
     
     public static void saveDesign(List<Room> rooms, String fileName) {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileName))) {
-            out.writeObject(rooms);  // Serialize the list of rooms, including their nested items
+            out.writeObject(rooms); 
             System.out.println("Design saved successfully.");
         } catch (IOException e) {
             e.printStackTrace();
@@ -13,7 +13,7 @@ public class FileHandler {
     }
     public static List<Room> loadDesign(String fileName) {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName))) {
-            List<Room> rooms = (List<Room>) in.readObject();  // Deserialize the list of rooms
+            List<Room> rooms = (List<Room>) in.readObject(); 
             System.out.println("Design loaded successfully.");
             return rooms;
         } catch (IOException | ClassNotFoundException e) {

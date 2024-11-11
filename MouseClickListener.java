@@ -10,7 +10,6 @@ public class MouseClickListener implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        // Handle mouse click, e.g., select a room or furniture item
     }
 
     @Override

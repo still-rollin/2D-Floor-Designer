@@ -2,9 +2,9 @@ import java.awt.*;
 
 public class Door {
     private Point position;
-    private int width = 20;  // Width of the door
-    private int height = 10;  // Height of the door
-    private String orientation;  // "N", "S", "E", "W" to represent the wall side
+    private int width = 20; 
+    private int height = 10; 
+    private String orientation; 
 
     public Door(Point position, String orientation) {
         this.position = position;
@@ -30,7 +30,7 @@ public class Door {
     }
 
     public void draw(Graphics g) {
-        g.setColor(Color.ORANGE);  // Door color
+        g.setColor(Color.ORANGE); 
         g.fillRect(position.x, position.y, width, height);
     }
 

@@ -11,19 +11,16 @@ public class CanvasPanel extends JPanel {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                // Select room for dragging or repositioning
             }
         });
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
-                // Handle room dragging with overlap check
             }
         });
     }
 
     public void addRoom(Room room) {
-        // Check for overlap and add room if valid
         if (!isOverlapping(room)) {
             rooms.add(room);
             repaint();

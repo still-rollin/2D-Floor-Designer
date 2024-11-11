@@ -2,9 +2,9 @@ import java.awt.*;
 
 public class Window {
     private Point position;
-    private int width = 30;  // Default window width
-    private int height = 10;  // Default window height
-    private String orientation;  // "N", "S", "E", "W" to represent wall side
+    private int width = 30; 
+    private int height = 10; 
+    private String orientation; 
 
     public Window(Point position, String orientation) {
         this.position = position;
